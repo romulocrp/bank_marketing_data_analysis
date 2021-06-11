@@ -1,6 +1,5 @@
-import streamlit as st
-import pandas as pd
-impot seaborn as sns
-import plotly.express as px
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
+streamlit==0.82.0
+pandas==1.2.1
+seaborn==0.11.1
+plotly==4.14.3
+matplotlib==3.4.2
