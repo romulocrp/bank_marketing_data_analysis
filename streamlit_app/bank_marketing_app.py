@@ -5,7 +5,7 @@ import matplotlib.ticker as ticker
 import seaborn as sns
 import plotly.express as px
 
-path = 'home/romulo/Documentos/projetos_ds/telemarketing_bank/bank-full-dates.csv'
+path = '/home/romulo/Documentos/projetos_ds/telemarketing_bank/bank-full-dates.csv'
 bank_data = pd.read_csv(path)
 bank_data['lc_date'] = pd.to_datetime(bank_data['lc_date'], format='%d%b%Y')
 bank_data.loc[(bank_data['pdays'] == -1), 'pdays'] = 0
