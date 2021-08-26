@@ -14,7 +14,7 @@
 - Build a dashboard using Streamlit framework
 
 ## Dataset
-  The dataset used was provided by UCI Machine Learning Repository, under the name “Bank Marketing Data Set” via this link: https://archive.ics.uci.edu/ml/datasets/Bank+Marketing
+  The dataset used was provided by UCI Machine Learning Repository, under the name “Bank Marketing Data Set” via this link: https://archive.ics.uci.edu/ml/datasets/Bank+Marketing.
 The variables are:
 - age (numeric)
 - job : type of job (categorical: 'admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed,'services','student','technician','unemployed','unknown')
