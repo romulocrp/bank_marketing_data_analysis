@@ -40,8 +40,8 @@ The variables are:
 
 ## Exploratory Data Analysis
 ### Descriptive analytics
-    First I will consider the outlier treated data, which means that I’m going to consider the fewer entries than the available from the dataset, in exchange I’m going to have more normalized and well-distributed data across the variables.
-    The first results aggregated are from a population characterization, using descriptive statistics, is possible to understand what is the most common characteristics of the clients f the bank, first the average numeric analysis:
+   First I will consider the outlier treated data, which means that I’m going to consider the fewer entries than the available from the dataset, in exchange I’m going to have more normalized and well-distributed data across the variables.
+   The first results aggregated are from a population characterization, using descriptive statistics, is possible to understand what is the most common characteristics of the clients f the bank, first the average numeric analysis:
 - Age: 40.37
 - Balance: 606.67
 - Duration: 205.36
@@ -58,7 +58,7 @@ The variables are:
 - Campaign: 1, 6
     Here lies more relevant information, all the entries are above 18 years, negative balance means people in debt, the duration is at a max of almost 11 minutes of contact duration, and people were called at a max of 6 times during the time of the campaign.
 ### Frequency Distributions
-    The categorical values can be analyzed by frequency distributions graphs, each value will be displayed below according to the most frequent to the least frequent:
+   The categorical values can be analyzed by frequency distributions graphs, each value will be displayed below according to the most frequent to the least frequent:
 - Job: Blue-collar, Management, Technician, Administrative, Services, Entrepreneur, Self-employed, Unemployed, Housemaid, Student, Unknown.
 - Marital: Married, Single, Divorced.
 - Education: Secondary, Tertiary, Primary, Unknown.
@@ -69,27 +69,27 @@ The variables are:
 - Poutcome: Unknown.
     So, building the persona target for this campaign, given this dataset is, Married, work either in a blue-collar or management job, has a secondary education, has a housing loan not defaulted yet, was contacted by cellphone and, since was never contacted for any other campaign, don’t have previous information if it is prone to accept the offer.
 ### Date related information
-    In order to recover date related information, it was necessary to craft a variable that stores this information, from the website where the data set is available, there is an important piece of information, all the entries are in chronological order, which means that the first entry is in 2008 and the last is in 2010.
-    First, a year column was put in place to organize the years, and then day, month, and year were used to build a column called “lc-date” it is about the last contact date the campaign had with the client.
-    Counting the entries in the “y” feature by date would give the periods of activity of the campaign over the year, we have an immense spike in the beginning, from May 1, 2008, to August 31, 2008, where 18,330 entries were put in place, the other spike was between November 1, 2008, to June 30, 2009, where 8,370 entries were made.
+   In order to recover date related information, it was necessary to craft a variable that stores this information, from the website where the data set is available, there is an important piece of information, all the entries are in chronological order, which means that the first entry is in 2008 and the last is in 2010.
+   First, a year column was put in place to organize the years, and then day, month, and year were used to build a column called “lc-date” it is about the last contact date the campaign had with the client.
+   Counting the entries in the “y” feature by date would give the periods of activity of the campaign over the year, we have an immense spike in the beginning, from May 1, 2008, to August 31, 2008, where 18,330 entries were put in place, the other spike was between November 1, 2008, to June 30, 2009, where 8,370 entries were made.
 ### Response
-    So is possible to check how many “yeses” and “nos” are in the dataset, the numbers are as follows:
+   So is possible to check how many “yeses” and “nos” are in the dataset, the numbers are as follows:
 - Yes: 1599
 - No: 26594
- What does that mean? Well, at first is possible to state that it’s a high unbalanced dataset, the success rate of the campaign was 5.6%, given this result, the response frequency on the standard dataset was checked, the rate was 12.84%. This clearly states that after running the outlier treatment of the dataset, many yes responses were thrown out of the dataset.
+   What does that mean? Well, at first is possible to state that it’s a high unbalanced dataset, the success rate of the campaign was 5.6%, given this result, the response frequency on the standard dataset was checked, the rate was 12.84%. This clearly states that after running the outlier treatment of the dataset, many yes responses were thrown out of the dataset.
 Hence, the average client of the bank is not the best target to address with the campaign, there must be a better profile of client to reach.
 ### Success rate
-    Considering the average results of a direct telephone campaign, this one was pretty average, accordingly with the Houston Chronicle, the average telemarketing campaign has a 12.95% success rate since this was the expected result, a less than half result to the average client means that the real target relies on the outliers.
+   Considering the average results of a direct telephone campaign, this one was pretty average, accordingly with the Houston Chronicle, the average telemarketing campaign has a 12.95% success rate since this was the expected result, a less than half result to the average client means that the real target relies on the outliers.
 ### Profit
-    So the average rate to a 1-year term deposit in Portugal is 1.76% a year, according to The Global Economy website, the minimum to open a term deposit can be as low as 250 euros. Usually, telemarketing campaigns don’t last so long, but a 2-month campaign can cost up to 10,000 euros. Using Insil telemarketing ROI calculator, the cost per buyer is 54.56 euros, for the first 4 months of the campaign, to regain 5 times more with minimum deposit, not counting the interest and period of time.
-    Calculating the 2 year time the campaign was on, the total cost was 120,000 euros and the revenue was 1,322,250 euros, the profit was 1,202,250 euros, not counting the interest and minimum initial investment on the bank.
+   So the average rate to a 1-year term deposit in Portugal is 1.76% a year, according to The Global Economy website, the minimum to open a term deposit can be as low as 250 euros. Usually, telemarketing campaigns don’t last so long, but a 2-month campaign can cost up to 10,000 euros. Using Insil telemarketing ROI calculator, the cost per buyer is 54.56 euros, for the first 4 months of the campaign, to regain 5 times more with minimum deposit, not counting the interest and period of time.
+   Calculating the 2 year time the campaign was on, the total cost was 120,000 euros and the revenue was 1,322,250 euros, the profit was 1,202,250 euros, not counting the interest and minimum initial investment on the bank.
 ## Conclusion
-    The average persona of this bank is not the best target for a term deposit telemarketing campaign, somehow the variables with outliers are related to a higher response rate. This is proven by the success rate on both cases, outlier treated dataset and not treated dataset, in its totality, the bank achieve average results for a telemarketing campaign, with a minimum profit of 1,202,250 euros for the entirety of the campaign.
+   The average persona of this bank is not the best target for a term deposit telemarketing campaign, somehow the variables with outliers are related to a higher response rate. This is proven by the success rate on both cases, outlier treated dataset and not treated dataset, in its totality, the bank achieve average results for a telemarketing campaign, with a minimum profit of 1,202,250 euros for the entirety of the campaign.
 ## Next Steps
 - Encode categorical values of the dataset
 - Perform a multivariate analysis
 - Search for correlations in the variables
 - Incorporate new graphs on Streamlit application.
 ### Medium publications
-    Also check out my publications on Medium about this app!
+   Also check out my publications on Medium about this app!
 https://medium.com/analytics-vidhya/building-a-functional-dashboard-on-streamlit-bff831fdc2aa
